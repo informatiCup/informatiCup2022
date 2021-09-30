@@ -1,0 +1,13 @@
+[Stations]
+S1 1
+S2 1
+
+[Lines]
+L1 S1 S2 2 1
+
+[Trains]
+T1 * 1 2
+
+[Passengers]
+P1 S1 S2 1 10
+P2 S1 S2 2 20

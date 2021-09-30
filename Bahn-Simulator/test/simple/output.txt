@@ -1,0 +1,14 @@
+[Train:T1]
+2 Depart L1
+
+[Train:T2]
+0 Start S2
+2 Depart L2
+
+[Passenger:P1]
+1 Board T1
+3 Detrain
+
+[Passenger:P2]
+1 Board T2
+7 Detrain
