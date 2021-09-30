@@ -8,6 +8,8 @@ Für den [informatiCup 2022](https://informaticup.github.io/competition/20-curre
 
 Die Anmeldung zum Wettbewerb findet über das neue Online-Portal [Teammates](https://teams.informaticup.de/) statt.
 
+Für die Teilnahme am Wettbewerb gibt es dann das neue [informatiCup CI System](ICUPCI.md).
+
 Weitere Infos und einen Rückblick auf die 16 Wettbewerbsrunden seit dem Jahr 2005 gibt es auf der [offiziellen informatiCup-Webseite](https://informaticup.github.io/).
 
 ~
@@ -17,6 +19,8 @@ The [German Informatics Society](https://gi.de) hosts the [informatiCup](https:/
 A timetable for a rail network is to be computed for the [informatiCup 2022](https://informaticup.github.io/competition/20-current). The goal is a software for the calculation of optimal timetables, which minimizes the total delay of all passengers and thus improves the overall satisfaction of the customers with the rail traffic.
 
 Sign up for the competition via the new online portal [Teammates](https://teams.informaticup.de/).
+
+There is then the new [informatiCup CI system](ICUPCI.md) for participating in the competition.
 
 Further information and a retrospective on the 16 informatiCup competitions since 2005 are available on the [official informatiCup website](https://informaticup.github.io/).
 
