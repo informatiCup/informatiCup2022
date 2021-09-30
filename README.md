@@ -4,7 +4,9 @@
 
 Die [Gesellschaft für Informatik](https://gi.de) veranstaltet den [informatiCup](https://informaticup.github.io/) - im Jahr 2022 bereits im 17. Jahr in Folge.
 
-Der informatiCup 2022 wird in Kürze gestartet...
+Für den [informatiCup 2022](https://informaticup.github.io/competition/20-current) soll ein Fahrplan für ein Schienennetzwerk erstellt werden. Das Ziel ist eine Software für die Berechnung von optimalen Fahrplänen, die die Gesamtverspätung aller Fahrgäste minimiert und somit insgesamt die Zufriedenheit der Kunden mit dem Schienenverkehr verbessert.
+
+Die Anmeldung zum Wettbewerb findet über das neue Online-Portal [Teammates](https://teams.informaticup.de/) statt.
 
 Weitere Infos und einen Rückblick auf die 16 Wettbewerbsrunden seit dem Jahr 2005 gibt es auf der [offiziellen informatiCup-Webseite](https://informaticup.github.io/).
 
@@ -12,7 +14,9 @@ Weitere Infos und einen Rückblick auf die 16 Wettbewerbsrunden seit dem Jahr 20
 
 The [German Informatics Society](https://gi.de) hosts the [informatiCup](https://informaticup.github.io/) collegiate computer science competition - in 2022 for the 17th consecutive time.
 
-The informatiCup 2022 starts soon...
+A timetable for a rail network is to be computed for the [informatiCup 2022](https://informaticup.github.io/competition/20-current). The goal is a software for the calculation of optimal timetables, which minimizes the total delay of all passengers and thus improves the overall satisfaction of the customers with the rail traffic.
+
+Sign up for the competition via the new online portal [Teammates](https://teams.informaticup.de/).
 
 Further information and a retrospective on the 16 informatiCup competitions since 2005 are available on the [official informatiCup website](https://informaticup.github.io/).
 
@@ -56,11 +60,11 @@ The informatiCup targets enrolled students throughout all fields of study and se
 
 ## Zeitplan des Wettbewerbs / Timeline
 
-Den Zeitplan des aktuellen Wettbewerbs wird es in Kürze wieder [hier](https://informaticup.github.io/competition/20-current) geben.
+Den Zeitplan des aktuellen Wettbewerbs gibt es [hier](https://informaticup.github.io/competition/20-current).
 
 ~
 
-The timeline of the current competition will be available [here](https://informaticup.github.io/competition/20-current) soon.
+The timeline of the current competition is available [here](https://informaticup.github.io/competition/20-current).
 
 ![image](https://cloud.githubusercontent.com/assets/1872314/19183660/a90e3f84-8c79-11e6-9047-b13c02a3290d.png)
 
