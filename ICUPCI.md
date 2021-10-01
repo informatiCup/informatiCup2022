@@ -32,8 +32,6 @@ In [Teammates](https://teams.informaticup.de/) kannst Du zu Deinem Benutzerkonto
 
 ## Das informatiCup CI System
 
-**Das informatiCup CI System wird in Kürze zur Verfügung stehen.**
-
 Jedes angemeldete Team erhält in dem neuen informatiCup CI System ("ICUPCI") ein Git Repository. Auf dieses Repository hat jedes Mitglied des Teams Zugriff mit Git via SSH, zum Beispiel mit **git clone ssh://ci@ci.informaticup.de:/repo**
 
 Die URL ist dabei für alle Teams die gleiche, der Zugriff auf das Repository des eigenen Teams wird über die SSH-Schlüssel der Teammitglieder geregelt.
