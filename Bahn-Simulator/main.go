@@ -85,11 +85,6 @@ func runSimulation(input, output string, verbose bool) (*big.Int, bool) {
 		return big.NewInt(-1), false
 	}
 
-	if !world.CheckConnected() {
-		fmt.Println("not all stations are connected")
-		return big.NewInt(-1), false
-	}
-
 	// Run simulation
 	for world.CurrentTime.Cmp(&world.MaxTime) != +1 {
 		world.CurrentTime.Add(&world.CurrentTime, big.NewInt(1))

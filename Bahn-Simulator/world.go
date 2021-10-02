@@ -215,7 +215,7 @@ func (w *World) ValidateStart() []error {
 		errs = append(errs, err)
 	}
 
-	if !w.CheckStationsConnected() {
+	if !w.CheckConnected() {
 		errs = append(errs, fmt.Errorf("validation failed for world: not all stations are connected"))
 	}
 
@@ -261,47 +261,6 @@ func (w *World) CheckConnected() bool {
 
 	for k := range marked {
 		if !marked[k] {
-			return false
-		}
-	}
-
-	return true
-}
-
-func (w *World) CheckStationsConnected() bool {
-	if len(w.Stations) == 0 {
-		return false
-	}
-
-	visited := make(map[string]bool)
-	queue := make(chan string, len(w.Stations))
-
-	for k := range w.Stations {
-		queue <- k
-		visited[k] = true
-		break
-	}
-
-	for len(queue) != 0 {
-		s := <-queue
-		for k := range w.Lines {
-			if w.Lines[k].End[0] == s {
-				if !visited[w.Lines[k].End[1]] {
-					visited[w.Lines[k].End[1]] = true
-					queue <- w.Lines[k].End[1]
-				}
-			}
-			if w.Lines[k].End[1] == s {
-				if !visited[w.Lines[k].End[0]] {
-					visited[w.Lines[k].End[0]] = true
-					queue <- w.Lines[k].End[0]
-				}
-			}
-		}
-	}
-
-	for k := range w.Stations {
-		if !visited[k] {
 			return false
 		}
 	}
