@@ -16,7 +16,7 @@ Das Anlegen eines Profils ist dabei komplett optional und für eine Teilnahme am
 
 ### Anmelden eines Teams
 
-Als registrierter Benutzer kannst Du ein Team anlegen. Gib dem Team dazu einen (kreativen) Namen und gib an von welchen Hochschulen die Teammitglieder kommen. Deine Teammitglieder kannst Du über die Email-Adresse, mit der sie sich bei [Teammates](https://teams.informaticup.de/) registriert haben, einladen. Deine Einladung erscheint im [Teammates](https://teams.informaticup.de/)-Dashboard Deiner Teamkollegen (es wird keine Email versandt). Einladungen kannst Du annehmen oder ablehnen.
+Als registrierter Benutzer kannst Du ein Team anlegen. Gib dem Team dazu einen (kreativen) Namen und gib an von welchen Hochschulen die Teammitglieder kommen. Deine Teammitglieder kannst Du über die Email-Adresse, mit der sie sich bei [Teammates](https://teams.informaticup.de/) registriert haben, einladen. Deine Einladung erscheint im [Teammates](https://teams.informaticup.de/)-Dashboard Deiner Teamkollegen. Einladungen kannst Du annehmen oder ablehnen.
 
 Ein Team mit mindestens 2 und höchstens 4 Teammitgliedern kannst Du für den informatiCup anmelden. Beachte dazu die Anmeldefrist des aktuellen Wettbewerbs.
 
