@@ -30,6 +30,63 @@ Für Fragen zu Teammates nutze bitte die [Issues des aktuellen GitHub Repositori
 
 In [Teammates](https://teams.informaticup.de/) kannst Du zu Deinem Benutzerkonto einen öffentlichen SSH-Schlüssel eintragen. Mit diesem Schlüssel hast Du dann Zugriff auf das Git Repository Deines Teams in dem informatiCup CI System.
 
+#### Wie sieht der öffentliche SSH-Schlüssel aus?
+
+Der **öffentliche** Schlüssel findet sich in einer Datei mit ```.pub```-Endung. Dieser muss **ohne Zeilenumbrüche** in [Teammates](https://teams.informaticup.de/) eingetragen werden. Der Schlüssel sieht ähnlich dem folgendem Schema aus:
+
+```
+ssh-ed25519 AAAAC3NzaC1lXXXXXXXXXXXXXXX/rcj6SyU0CNdUE/w5NjoUxQDbKuwcFugyHzYhoGx5 marcus@localhost
+```
+
+folgende Beispiele sind **KEINE** gültigen öffentlichen Schlüssel:
+
+```
+SHA256:k/8OZpOFWkhOC+s+VIXBLTcJMHsUVjSuyADxhz3CLvs marcus@localhost
+```
+(nur die Checksumme, **kein** Schlüssel)
+
+```
+SHA256:k/8OZpOFWkhOC+s+VIXBLTcJMHsUVjSuyADxhz3CLvs
+```
+(nur die Checksumme, **kein** Schlüssel)
+
+```
+-----BEGIN OPENSSH PRIVATE KEY-----
+b3BlbnNzaC1rZXktXXXXXXXXXXXXXXXXXXXXXXXXXXXXXAAAAAABAAAAMwAAAAtzc2gtZW
+QyNTUxOQAAACDR/63I+ksXXXXXXXXXXXXXXXXXXXXXXXXoMh82IaBseQAAAJDdSEd73UhH
+ewAAAAtzc2gtZWQyNTUxOQXXXXXXXXXXXXXXXXXXXXXXXXY6FMUA2yrsHBboMh82IaBseQ
+AAAEXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXTdH/rcj6SyU0CNdUE/w5NjoU
+xQDbKuwcFugyHzYhoGx5AAAADXRvcHJhbmdlckBJdm8=
+-----END OPENSSH PRIVATE KEY-----
+```
+(privater Schlüssel)
+
+```
++--[ED25519 256]--+
+|  o.  oo*O+.     |
+|   + o =+.*.     |
+|    * * ++..     |
+|   . = X.= .     |
+|  . . +.S o .    |
+|   o ..  = o     |
+|  .  .. . B      |
+|   . ..  o +     |
+|    E ..   .o    |
++----[SHA256]-----+
+```
+(randomart ist **kein** Schlüssel)
+
+```
+ssh-ed25519 AAAAC3NzaC1l
+
+XXXXXXXXXXXXXX/rcj6S
+
+
+yU0CNdUE/w5NjoUxQDbKuwcFugyHzYhoGx5 marcus@localhost
+
+```
+(Zeilenumbrüche sind nicht erlaubt)
+
 ## Das informatiCup CI System
 
 Jedes angemeldete Team erhält in dem neuen informatiCup CI System ("ICUPCI") ein Git Repository. Auf dieses Repository hat jedes Mitglied des Teams Zugriff mit Git via SSH, zum Beispiel mit **git clone ssh://ci@ci.informaticup.de:/repo**
