@@ -219,6 +219,7 @@ func (t *Train) processRule(w *World, rule string) error {
 		st.L.Lock()
 		st.CurrenTrains.Sub(&st.CurrenTrains, big.NewInt(1))
 		st.L.Unlock()
+		t.PositionSince = *big.NewRat(0, 1)
 		t.advanceLinePosition(w)
 	default:
 		return fmt.Errorf("train (%s): unknown action '%s'", t.ID, matches[trainPlanRegexpAction])
