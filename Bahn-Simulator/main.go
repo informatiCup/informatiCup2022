@@ -35,7 +35,8 @@ func main() {
 	if *profile != "" {
 		f, err := os.Create(*profile)
 		if err != nil {
-			log.Panicln(err)
+			fmt.Println(err)
+			os.Exit(2)
 		}
 		defer f.Close()
 		err = pprof.StartCPUProfile(f)
@@ -51,7 +52,7 @@ func main() {
 	}
 
 	if *verbose {
-		log.Println("Printing score")
+		fmt.Println("Printing score")
 	}
 	fmt.Println(delay.String())
 }
@@ -64,7 +65,7 @@ func runSimulation(input, output string, verbose bool) (*big.Int, bool) {
 	}
 
 	if verbose {
-		log.Println("Read output plans")
+		fmt.Println("Read output plans")
 	}
 
 	err = ParsePlan(world, output)
@@ -74,7 +75,7 @@ func runSimulation(input, output string, verbose bool) (*big.Int, bool) {
 	}
 
 	if verbose {
-		log.Println("Validating word begin")
+		fmt.Println("Validating word begin")
 	}
 	errs := world.ValidateStart()
 	if errs != nil {
@@ -89,7 +90,7 @@ func runSimulation(input, output string, verbose bool) (*big.Int, bool) {
 	for world.CurrentTime.Cmp(&world.MaxTime) != +1 {
 		world.CurrentTime.Add(&world.CurrentTime, big.NewInt(1))
 		if verbose {
-			log.Println("Timestep", world.CurrentTime.String())
+			fmt.Println("Timestep", world.CurrentTime.String())
 		}
 		var errFound bool
 
@@ -140,7 +141,7 @@ func runSimulation(input, output string, verbose bool) (*big.Int, bool) {
 
 		// Validate
 		if verbose {
-			log.Println("Validate", world.CurrentTime.String())
+			fmt.Println("Validate", world.CurrentTime.String())
 		}
 
 		errs = world.Validate()
@@ -155,7 +156,7 @@ func runSimulation(input, output string, verbose bool) (*big.Int, bool) {
 
 	// Check result and calculate delay
 	if verbose {
-		log.Println("Calculating score")
+		fmt.Println("Calculating score")
 	}
 
 	delay := big.NewInt(0)
@@ -165,7 +166,7 @@ func runSimulation(input, output string, verbose bool) (*big.Int, bool) {
 		d := world.Passengers[k].Delay()
 		if d.Cmp(InvalidDelay) == 0 {
 			valid = false
-			log.Println("passenger", k, "does not reach goal")
+			fmt.Println("passenger", k, "does not reach goal")
 		}
 		delay.Add(delay, d)
 	}
