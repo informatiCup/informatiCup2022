@@ -99,7 +99,11 @@ Das ICUPCI Git Repository Eures Teams steht Euch für die Dauer des laufenden We
 
 Die Verwendung des ICUPCI Git Repository als "origin" ist komplett optional, steht Euch aber für den laufenden Wettbewerb natürlich gerne zur Verfügung.
 
-Mit folgendem Befehl könnt Ihr Euren Code regelmäßig in das ICUPCI übertragen, falls Ihr das ICUPCI Git Repository nicht als "origin" nutzt: **git push --mirror ci@ci.informaticup.de:/repo**
+Mit folgendem Befehl könnt Ihr Euren Code regelmäßig in das ICUPCI übertragen, falls Ihr das ICUPCI Git Repository nicht als "origin" nutzt:
+
+```
+git push --mirror ci@ci.informaticup.de:/repo
+```
 
 ### Abgabe
 
