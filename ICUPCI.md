@@ -115,6 +115,10 @@ Beachtet das erwartete Format Eurer Lösungseinreichung in der aktuellen Aufgabe
 
 Wenn Ihr Eure Software in das ICUPCI Git Repository Eures Teams gepusht habt, führt das informatiCup CI System automatisch Tests mit Eurer Software durch. Die Ergebnisse dieser Softwaretests könnt Ihr Euch in [Teammates](https://teams.informaticup.de/) auf der Seite Eures Teams ansehen. Ihr werdet damit also schon während der Wettbewerb noch läuft über die funktionale Korrektheit und Performance Eurer Software informiert.
 
+Die Continuous Integration basiert auf Docker. Wenn im Git Repository Eures Teams eine **Dockerfile** liegt, dann wird der Quelltext gebaut und mittels ```docker run`` gestartet. Das Programm erhält dann - wie in der Aufgabe beschrieben - die Eingabe über die *Standardeingabe* und muss das Ergebnis auf der *Standardausgabe* ausgeben. Die Eingabedateien werden wöchentlich gewechselt, es lohnt sich also, regelmäßig den Status zu überprüfen.
+
+Wenn kein neuer Commit im Git Repository vorliegt und sich die Eingabe nicht verändert hat, dann wird der Test übersprungen.
+
 ## Einrichten von Git und SSH unter Windows
 
 Der Zugriff auf das Git Repository Eures Teams im informatiCup CI System erfolgt mit Git via SSH mit dem öffentlichen SSH-Schlüssel den jedes Teammitglied für sich in [Teammates](https://teams.informaticup.de/) eintragen kann.
