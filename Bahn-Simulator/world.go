@@ -101,49 +101,50 @@ func (w *World) Validate() []error {
 	e := make(chan error)
 	var errs []error
 	var wg sync.WaitGroup
-	for k := range w.Stations {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Stations[index].IsValid(w)
-			if err != nil {
-				e <- fmt.Errorf("validation failed for station '%s': %s", index, err.Error())
-			}
-		}(k)
-	}
 
-	for k := range w.Lines {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Lines[index].IsValid(w)
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Stations {
+			err := w.Stations[k].IsValid(w)
 			if err != nil {
-				e <- fmt.Errorf("validation failed for line '%s': %s", index, err.Error())
+				e <- fmt.Errorf("validation failed for station '%s': %s", k, err.Error())
 			}
-		}(k)
-	}
+		}
+	}()
 
-	for k := range w.Trains {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Trains[index].IsValid(w)
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Lines {
+			err := w.Lines[k].IsValid(w)
 			if err != nil {
-				e <- fmt.Errorf("validation failed for train '%s': %s", index, err.Error())
+				e <- fmt.Errorf("validation failed for line '%s': %s", k, err.Error())
 			}
-		}(k)
-	}
+		}
+	}()
 
-	for k := range w.Passengers {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Passengers[index].IsValid(w)
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Trains {
+			err := w.Trains[k].IsValid(w)
 			if err != nil {
-				e <- fmt.Errorf("validation failed for passenger '%s': %s", index, err.Error())
+				e <- fmt.Errorf("validation failed for train '%s': %s", k, err.Error())
 			}
-		}(k)
-	}
+		}
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Passengers {
+			err := w.Passengers[k].IsValid(w)
+			if err != nil {
+				e <- fmt.Errorf("validation failed for passenger '%s': %s", k, err.Error())
+			}
+		}
+	}()
 
 	go func() {
 		wg.Wait()
@@ -162,49 +163,50 @@ func (w *World) ValidateStart() []error {
 
 	e := make(chan error)
 	var wg sync.WaitGroup
-	for k := range w.Stations {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Stations[index].IsValidStart(w)
-			if err != nil {
-				e <- fmt.Errorf("validation failed for station '%s': %s", index, err.Error())
-			}
-		}(k)
-	}
 
-	for k := range w.Lines {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Lines[index].IsValidStart(w)
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Stations {
+			err := w.Stations[k].IsValidStart(w)
 			if err != nil {
-				e <- fmt.Errorf("validation failed for line '%s': %s", index, err.Error())
+				e <- fmt.Errorf("validation failed for station '%s': %s", k, err.Error())
 			}
-		}(k)
-	}
+		}
+	}()
 
-	for k := range w.Trains {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Trains[index].IsValidStart(w)
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Lines {
+			err := w.Lines[k].IsValidStart(w)
 			if err != nil {
-				e <- fmt.Errorf("validation failed for train '%s': %s", index, err.Error())
+				e <- fmt.Errorf("validation failed for line '%s': %s", k, err.Error())
 			}
-		}(k)
-	}
+		}
+	}()
 
-	for k := range w.Passengers {
-		wg.Add(1)
-		go func(index string) {
-			defer wg.Done()
-			err := w.Passengers[index].IsValidStart(w)
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Trains {
+			err := w.Trains[k].IsValidStart(w)
 			if err != nil {
-				e <- fmt.Errorf("validation failed for passenger '%s': %s", index, err.Error())
+				e <- fmt.Errorf("validation failed for train '%s': %s", k, err.Error())
 			}
-		}(k)
-	}
+		}
+	}()
+
+	wg.Add(1)
+	go func() {
+		defer wg.Done()
+		for k := range w.Passengers {
+			err := w.Passengers[k].IsValidStart(w)
+			if err != nil {
+				e <- fmt.Errorf("validation failed for passenger '%s': %s", k, err.Error())
+			}
+		}
+	}()
 
 	go func() {
 		wg.Wait()
