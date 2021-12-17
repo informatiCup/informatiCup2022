@@ -117,6 +117,8 @@ Wenn Ihr Eure Software in das ICUPCI Git Repository Eures Teams gepusht habt, f�
 
 Die Continuous Integration basiert auf Docker. Wenn im Git Repository Eures Teams eine **Dockerfile** liegt, dann wird der Quelltext gebaut und mittels ```docker run`` gestartet. Das Programm erhält dann - wie in der Aufgabe beschrieben - die Eingabe über die *Standardeingabe* und muss das Ergebnis auf der *Standardausgabe* ausgeben. Die Eingabedateien werden wöchentlich gewechselt, es lohnt sich also, regelmäßig den Status zu überprüfen.
 
+Das CI arbeitet auf dem ```main```-Branch Eures Repositories. Existiert dieser nicht, wird der ```master```-Branch versucht. Existiert auch dieser nicht, bricht die Verarbeitung mit einer Fehlermeldung ab.
+
 Wenn kein neuer Commit im Git Repository vorliegt und sich die Eingabe nicht verändert hat, dann wird der Test übersprungen.
 
 ## Einrichten von Git und SSH unter Windows
