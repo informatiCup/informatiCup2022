@@ -119,7 +119,7 @@ Die Continuous Integration basiert auf Docker. Wenn im Git Repository Eures Team
 
 Das CI arbeitet auf dem ```main```-Branch Eures Repositories. Existiert dieser nicht, wird der ```master```-Branch versucht. Existiert auch dieser nicht, bricht die Verarbeitung mit einer Fehlermeldung ab.
 
-Wenn kein neuer Commit im Git Repository vorliegt und sich die Eingabe nicht verändert hat, dann wird der Test übersprungen.
+Wenn kein neuer Commit im Git Repository vorliegt und sich die Eingabe nicht verändert hat, dann wird der Test übersprungen. In diesem Fall wird **kein** Eintrag in Teammates erstellt.
 
 ## Einrichten von Git und SSH unter Windows
 
