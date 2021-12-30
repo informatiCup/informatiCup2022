@@ -155,7 +155,7 @@ func (p *Passenger) Update(w *World, e chan error, wg *sync.WaitGroup) {
 		train.L.Lock()
 		defer train.L.Unlock()
 		if !train.BoardingPossible {
-			e <- fmt.Errorf("passenger (%s): boarding not possible at %s", p.ID, train.ID)
+			e <- fmt.Errorf("passenger (%s): detrain not possible at %s", p.ID, train.ID)
 			return
 		}
 		station, ok := w.Stations[train.Position[0]]
