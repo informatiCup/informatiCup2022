@@ -37,7 +37,7 @@ func ParsePlan(w *World, path string) error {
 
 	f, err := os.Open(path)
 	if err != nil {
-		return nil
+		return err
 	}
 	defer f.Close()
 

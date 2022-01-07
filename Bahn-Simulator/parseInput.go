@@ -71,7 +71,7 @@ func ParseInput(path string) (*World, error) {
 
 	f, err := os.Open(path)
 	if err != nil {
-		return &World{}, nil
+		return &World{}, err
 	}
 	defer f.Close()
 
