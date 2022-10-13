@@ -1,5 +1,7 @@
 ![informatiCup2](https://user-images.githubusercontent.com/600435/95178310-92ebb180-07bf-11eb-83bb-4e897e960e53.png)
 
+[Zum aktuellen Wettbewerb](https://github.com/informatiCup/informatiCup2023) | [To the most recent competition](https://github.com/informatiCup/informatiCup2023)
+
 # informatiCup 2022
 
 Die [Gesellschaft für Informatik](https://gi.de) veranstaltet den [informatiCup](https://informaticup.github.io/) - im Jahr 2022 bereits im 17. Jahr in Folge.
