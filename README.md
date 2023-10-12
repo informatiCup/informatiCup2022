@@ -1,6 +1,6 @@
 ![informatiCup2](https://user-images.githubusercontent.com/600435/95178310-92ebb180-07bf-11eb-83bb-4e897e960e53.png)
 
-[Zum aktuellen Wettbewerb](https://github.com/informatiCup/informatiCup2023) | [To the most recent competition](https://github.com/informatiCup/informatiCup2023)
+[Zum aktuellen Wettbewerb](https://github.com/informatiCup/informatiCup2024) | [To the most recent competition](https://github.com/informatiCup/informatiCup2024)
 
 # informatiCup 2022
 
