@@ -1,10 +1,10 @@
 ![informatiCup2](https://user-images.githubusercontent.com/600435/95178310-92ebb180-07bf-11eb-83bb-4e897e960e53.png)
 
-[Zum aktuellen Wettbewerb](https://github.com/informatiCup/informatiCup2024) | [To the most recent competition](https://github.com/informatiCup/informatiCup2024)
+[Zum aktuellen Wettbewerb](https://github.com/informatiCup/informatiCup2025) | [To the most recent competition](https://github.com/informatiCup/informatiCup2025)
 
 # informatiCup 2022
 
-Die [Gesellschaft für Informatik](https://gi.de) veranstaltet den [informatiCup](https://informaticup.gi.de/) - im Jahr 2022 bereits im 17. Jahr in Folge.
+Die [Gesellschaft für Informatik](https://gi.de) veranstaltet den [informatiCup](https://informaticup.github.io/) - im Jahr 2022 bereits im 17. Jahr in Folge.
 
 Für den [informatiCup 2022](https://informaticup.gi.de/competition/20-current) soll ein Fahrplan für ein Schienennetzwerk erstellt werden. Das Ziel ist eine Software für die Berechnung von optimalen Fahrplänen, die die Gesamtverspätung aller Fahrgäste minimiert und somit insgesamt die Zufriedenheit der Kunden mit dem Schienenverkehr verbessert.
 
@@ -12,11 +12,11 @@ Die Anmeldung zum Wettbewerb findet über das neue Online-Portal [Teammates](htt
 
 Für die Teilnahme am Wettbewerb gibt es dann das neue [informatiCup CI System](ICUPCI.md).
 
-Weitere Infos und einen Rückblick auf die 16 Wettbewerbsrunden seit dem Jahr 2005 gibt es auf der [offiziellen informatiCup-Webseite](https://informaticup.gi.de/).
+Weitere Infos und einen Rückblick auf die 16 Wettbewerbsrunden seit dem Jahr 2005 gibt es auf der [offiziellen informatiCup-Webseite](https://informaticup.github.io/).
 
 ~
 
-The [German Informatics Society](https://gi.de) hosts the [informatiCup](https://informaticup.gi.de/) collegiate computer science competition - in 2022 for the 17th consecutive time.
+The [German Informatics Society](https://gi.de) hosts the [informatiCup](https://informaticup.github.io/) collegiate computer science competition - in 2022 for the 17th consecutive time.
 
 A timetable for a rail network is to be computed for the [informatiCup 2022](https://informaticup.gi.de/competition/20-current). The goal is a software for the calculation of optimal timetables, which minimizes the total delay of all passengers and thus improves the overall satisfaction of the customers with the rail traffic.
 
@@ -24,7 +24,7 @@ Sign up for the competition via the new online portal [Teammates](https://teams.
 
 There is then the new [informatiCup CI system](ICUPCI.md) for participating in the competition.
 
-Further information and a retrospective on the 16 informatiCup competitions since 2005 are available on the [official informatiCup website](https://informaticup.gi.de/).
+Further information and a retrospective on the 16 informatiCup competitions since 2005 are available on the [official informatiCup website](https://informaticup.github.io/).
 
 ![image](https://cloud.githubusercontent.com/assets/1872314/19118630/4ea5533c-8b1d-11e6-8496-a796adce2001.png)
 
@@ -90,8 +90,8 @@ Current news is also available on Twitter from [@informatiCup](https://twitter.c
 
 ## Resultate vergangener Wettbewerbe / Results from previous informatiCup challenges
 
-Wenn ihr eine Idee bekommen möchtet, wie die Dokumentation von Gewinner-Teams der letzten Jahre aussieht, [schaut euch](https://informaticup.gi.de/wettbewerb/aufgaben-loesungen) die Ergebnisse der letzten Jahre an.
+Wenn ihr eine Idee bekommen möchtet, wie die Dokumentation von Gewinner-Teams der letzten Jahre aussieht, [schaut euch](https://informaticup.github.io/challenges/) die Ergebnisse der letzten Jahre an.
 
 ~
 
-If you like to get inspired on how documentation for successful informatiCup submissions look like [check out](https://informaticup.gi.de/wettbewerb/aufgaben-loesungen) the results from previous years.
+If you like to get inspired on how documentation for successful informatiCup submissions look like [check out](https://informaticup.github.io/challenges/) the results from previous years.
